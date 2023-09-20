@@ -1,0 +1,71 @@
+<ng-container>
+  <c-container [fluid]="true">
+    <button
+      toggle="visible"
+      cHeaderToggler
+      [cSidebarToggle]="sidebarId"
+      class="ps-1"
+    >
+      <svg cIcon
+        name="cilMenu"
+        size="lg"
+      ></svg>
+    </button>
+   
+    <c-header-nav class="d-none d-lg-flex">
+   
+      <li>
+        <a routerLink="./" cDropdownItem>
+          <svg cIcon class="me-2" name="cilBell"></svg>
+          Notificaciones
+          <c-badge class="ms-2 float-end" color="info">
+            2
+          </c-badge>
+        </a>
+      </li>
+      <span style="width: 20px; display: inline-block;"></span>
+      <li>
+        <a routerLink="./" cDropdownItem>
+          <svg cIcon class="me-2" name="cilEnvelopeOpen"></svg>
+          Mensajes
+          <c-badge class="ms-2 float-end" color="success">
+            7
+          </c-badge>
+        </a>
+      </li>
+      <span style="width: 20px; display: inline-block;"></span>
+      <li>
+        <a routerLink="./" cDropdownItem>
+          <svg cIcon class="me-2" name="cilTask"></svg>
+          Trabajos
+          <c-badge class="ms-2 float-end" color="danger">
+            5
+          </c-badge>
+          
+        </a>
+      </li>
+      <span style="width: 20px; display: inline-block;"></span>
+      <li>
+        <a routerLink="./" cDropdownItem>
+          <svg cIcon class="me-2" name='cilCommentSquare'></svg>
+          Comunicados
+          <c-badge class="ms-auto" color="warning">
+            5
+          </c-badge>
+          <span style="width: 20px; display: inline-block;"></span>
+        </a>
+      </li>
+
+      
+      
+    </c-header-nav>
+    <c-header-nav class="ms-3">
+      
+    </c-header-nav>
+
+  </c-container>
+
+
+</ng-container>
+
+
